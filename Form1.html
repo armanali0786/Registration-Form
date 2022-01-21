@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+<title>Bootstrap Simple Registration Form</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="style1.css">
+<script src="./form1.js"></script>
+</head>
+<body onload='document.form1.text1.focus()'>
+<div class="signup-form">
+    <form action="#" method="post" onsubmit="validate()">
+		<h2>Registration Form</h2>
+        
+		<p class="hint-text">Create your account.</p>
+
+        <div class="form-group">
+			<div class="row">
+				<div class="col-xs-6"><input type="text" class="form-control" name="username" id="user" placeholder="First Name" required="required">
+                </div>
+				<div class="col-xs-6"><input type="text" class="form-control" name="username" id="user" placeholder="Last Name" required="required"></div>
+			</div>        	
+        </div>
+
+        <div class="form-group">
+        	<input type="email" class="form-control" name="email" id="emails" placeholder="Email" required="required">
+        </div>
+
+		<div class="form-group">
+            <input type="password" class="form-control" name="password" id ="pass" placeholder="Password" required="required"> 
+        </div>
+
+		<div class="form-group">
+            <input type="password" class="form-control" name="password2" id="conpass" placeholder="Confirm Password" required="required">
+        </div>   
+
+        <div class="form-group">
+            <input type="text" class="form-control" name="MobileNumber" id="mobileNumber" value="" placeholder="Mobile No" required="required">
+        </div>
+
+        
+        <div class="form-group">
+            Enter Your Gender: <input type="radio" id="gender" name="Gender" value="Male">
+             <label >Male</label>
+            <input type="radio" id="gender" name="Gender" value="Female">
+             <label >Female</label>
+            <input type="radio" id="gender" name="Gender" value="Other">
+            <label >Other</label>
+        </div>
+
+        <div class="form-group">
+			<label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+		</div>
+        
+		<div class="form-group">
+            <button type="button"  value="Submit" class="btn btn-success btn-lg btn-block" onclick="ValidateNo();">Register Now</button>
+        </div>
+
+    
+    </form>
+
+	<div class="text-center">Already have an account? <a href="#">Sign in</a></div>
+
+</div>
+</body>
+</html>
